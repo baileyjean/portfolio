@@ -1,16 +1,16 @@
 import {Switch, Route} from 'react-router-dom';
 import Nav from './components/Nav';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import './index.css';
 
 function App() {
   return (
     <div className="app">
       <header><Nav /></header>
-      <div>
+      <div className="container">
         <Switch>
           <Route exact path="/" component = {(props) => (
             <Home />

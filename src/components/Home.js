@@ -1,11 +1,10 @@
 import React from 'react'
 
-const Home = (props) => {
+const Home = () => {
 
   return (
     <div className="intro">
       <h1>BaileyCodes</h1>
-      <h2>{props.name}</h2>
     </div>
   )
 }
