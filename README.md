@@ -1,5 +1,5 @@
 # BaileyCodes: Professional Portfolio for Bailey Leavitt
-## June 2021
+## July 2021
 
 ## Created By: Bailey Leavitt
 
@@ -21,4 +21,4 @@ HTML | CSS | Javascript | React | Node.js
 ### Screenshots from Design Process
 
 #### Component Hierarchy Diagram (CHD) for frontend:
-![CHD](./BaileyCodesCHD.png)
+![CHD](./styles/../src/styles/images/BaileyCodesCHD.png)

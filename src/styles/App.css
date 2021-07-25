@@ -1,0 +1,110 @@
+/**************************************************************************************************************************************************/
+/******************************************************************* APP & INDEX ******************************************************************/
+/**************************************************************************************************************************************************/
+html, body {
+  text-align: center;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: stretch;
+  background-attachment: fixed;
+  color: black;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Encode Sans SC', sans-serif;
+}
+
+.App {
+  display: flex;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  background-color: white; 
+  margin: 1em;
+  color: black;
+  border-radius: 25px;
+  font-family: 'Encode Sans SC', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.233);
+  font-weight: bolder;
+}
+
+/**************************************************************************************************************************************************/
+/******************************************************************** MOBILE: App & Index *********************************************************/
+/**************************************************************************************************************************************************/
+@media screen and (max-width: 500px) {
+  html, body {
+    /* background-image: url("./images/nerdyNomadMobileBackground.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center; */
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif
+  }
+}
+
+/**************************************************************************************************************************************************/
+/******************************************************************** NAV BAR *********************************************************************/
+/**************************************************************************************************************************************************/
+.nav {
+  height: 100%;
+  width: 0;
+  background: rgba(3, 1, 126, 0.438);
+  background: -webkit-linear-gradient(top left, rgba(3, 1, 126, .5), rgba(241, 147, 93, .3));
+  background: -moz-linear-gradient(top left, rgba(3, 1, 126, .5), rgba(241, 147, 93, .3));
+  background: linear-gradient(to bottom right, rgba(3, 1, 126, .5), rgba(241, 147, 93, 0.3));
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: .5s ease;
+  overflow-x: hidden;
+}
+
+.nav span {
+  display: block;
+  font-size: 1.25em;
+  padding: 1em 1em 1em 1em;
+  transition: 0.3s;
+}
+
+.nav span:hover {
+  color: #a4f5f1;
+}
+
+.nav .close-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  margin-left: 5em;
+  background-color:#000000e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#open-nav {
+  transition: margin-left .5s;
+  padding: 1em;
+  height: auto;
+}
+
+/**************************************************************************************************************************************************/
+/******************************************************************** MOBILE: Nav Bar *************************************************************/
+/**************************************************************************************************************************************************/
+@media screen and (max-width: 500px) {
+  .nav span {font-size: 18px;}
+  .nav {height: 100%;}
+}
