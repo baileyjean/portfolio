@@ -1,10 +1,9 @@
 import React from 'react'
+import '../styles/App.css'
 
 const Home = () => {
-
-  console.log("load success - TWSS")
   return (
-    <div className="intro">
+    <div className="home">
       <h1>BaileyCodes</h1>
     </div>
   )

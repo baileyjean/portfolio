@@ -1,27 +1,10 @@
-// import React, { Component } from 'react';
-// import { NavLink } from 'react-router-dom';
-
-// export default class Nav extends Component {
-//   render() {
-//     return (
-//       <nav>
-//         <div className="nav">
-//           <NavLink to="/">Projects</NavLink>
-//           <NavLink to="/obligatory-about-page">Bio</NavLink>
-//           <NavLink to="/drop-me-a-line">Contact</NavLink>
-//         </div>
-//       </nav>
-//     );
-//   }
-// }
-
 import '../styles/App.css'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 // import logo from '../styles/images/nerdyNomad-smol-logoProto4.png'
 
-const NavBar = (props) => {
-  //////////////////////// STATE ////////////////////////
+const NavBar = () => {
+  //////////////////////// FUNCTIONS ////////////////////////
 
   const openNav = () => {
     document.getElementById("side-nav").style.width = "20em";
@@ -41,8 +24,8 @@ const NavBar = (props) => {
         <button className="close-nav" onClick={closeNav}>X</button>
         {/* <img src={logo} alt={"Nerdy Nomad Logo"} style={{ width: '100%' }} /> */}
         <nav>
-          <span><NavLink style={{ textDecoration: 'none', color: 'white' }} to={"/"}>Bailey Codes</NavLink></span>
-          <span><NavLink style={{ textDecoration: 'none', color: 'white' }} to="/drop-me-a-line">Contact Me</NavLink></span>
+          <span><NavLink style={{ textDecoration: 'none', color: 'white', textShadow: '2px 2px 4px #000000' }} to={"/"}>Bailey Codes</NavLink></span>
+          <span><NavLink style={{ textDecoration: 'none', color: 'white', textShadow: '2px 2px 4px #000000' }} to="/drop-me-a-line">Contact Me</NavLink></span>
         </nav>
       </div>
     </div>

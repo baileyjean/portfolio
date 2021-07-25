@@ -4,7 +4,7 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <h1>Drop Me A Line</h1>
+      <h1>Connect With Me</h1>
     </div>
   )
 }
