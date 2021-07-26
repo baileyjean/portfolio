@@ -8,13 +8,13 @@ const Projects = () => {
     <div className="project-card">
       <div id="project-single">
         <h2>NERDY NOMAD</h2>
-        <p>Image go here</p>
+        <img src={nerdyNomad} alt="Nerdy Nomad logo" />
         <p>Project Description</p>
         <p>Project Stack</p>
       </div>
       <div id="project-single">
         <h2>RETRIEVER</h2>
-        <img src={retriever} alt="Retriever the App" />
+        <img src={retriever} alt="Retriever the App screenshot" />
         <p>Project Description</p>
         <p>Project Stack</p>
       </div>
@@ -27,7 +27,7 @@ const Projects = () => {
 
       <div id="project-single">
         <h2>DOGECOIN THE GAME</h2>
-        <p>Image go here</p>
+        <img src={dogecoin} alt="Dogecoin the Game logo" />
         <p>Project Description</p>
         <p>Project Stack</p>
       </div>
