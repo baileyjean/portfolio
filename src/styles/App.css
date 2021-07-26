@@ -7,7 +7,7 @@ html, body {
   color: rgb(227, 222, 228);
   margin: 0px;
   padding: 0px;
-  height: 100vh;
+  height: auto;
   width: 100vw;
   font-family: 'Assistant', sans-serif;
   font-size: 16px;
@@ -89,7 +89,7 @@ button:hover {
 
 #open-nav {
   transition: margin-left .5s;
-  padding: 1em;
+  padding: .5em;
   height: auto;
   font-size: 2em;
 }
@@ -110,20 +110,57 @@ button:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 0;
+  margin: 0 4em 10em 0;
   padding: 0;
   width: 100%;
+  border-style: double;
+  border-width: 1px;
+  border-color: blue;
 }
 
 .pages h1 {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 72px;
   text-shadow: .01em .01em .1em #2affd1;
+  padding: 0;
+  margin: .25em 0 .25em 0;
 }
 
 .pages h1:hover {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 69px;
-  text-shadow: 0em 4em .069em #2affd1;
+  text-shadow: 0em 1em .069em #2affd1;
+  margin: .5em 0 .75em 0;
   cursor: none;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 5em 0 5em;
+  width: 95%;
+}
+
+/**************************************************************************************************************************************************/
+/******************************************************************** PROJECTCARD *****************************************************************/
+/**************************************************************************************************************************************************/
+.project-card {
+  display: grid;
+  grid-template-columns: 30em 30em;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5em;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+#project-single {
+  border-style: dotted;
+  border-width: 1px; 
+  border-color: white;
 }
