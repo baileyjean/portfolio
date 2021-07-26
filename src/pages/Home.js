@@ -1,14 +1,64 @@
 import React, { useRef } from 'react'
 import ProjectCard from '../components/ProjectCard'
 import '../styles/App.css'
+import dogecoin from '../styles/images/dogecoin.png'
+import retriever from '../styles/images/retriever.png'
+import nerdyNomad from '../styles/images/nerdyNomad.png'
 
-const Home = () => {
+const Home = (props) => {
   const topRef = useRef()
   const introRef = useRef()
   const projectRef = useRef()
   const skillRef = useRef()
   const eduRef = useRef()
   const resumeRef = useRef()
+  const superSmashBros = <iframe src="https://player.vimeo.com/video/579546505?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="266" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Smash Bros Python3 OOP CLI Game - With AWESOME Music!"></iframe>
+  const rarePokedex = <iframe src="https://player.vimeo.com/video/579560107?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="350" height="202" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Rare Pokedex: Flaskathon Fullstack Project"></iframe>
+  const midwayMadness = <iframe src="https://player.vimeo.com/video/579544307?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="266" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Midway Madness - A Fun, Creative Python3 CLI Game"></iframe>
+  const projects = [
+    {
+      name: 'NERDY NOMAD', 
+      media: <img src={nerdyNomad} alt="Nerdy Nomad logo" />, 
+      description: '', 
+      techStack: 'PostgreSQL/Express/React/Node.js', 
+      link: 'https://nerdy-nomad.herokuapp.com/'
+    },
+    {
+      name: 'RETRIEVER', 
+      media: <img src={retriever} alt="Retriever the App screenshot" />, 
+      description: '', 
+      techStack: 'PostgreSQL/Express/React/Node.js', 
+      link: 'https://retriever-app.herokuapp.com/'
+    },
+    {
+      name: 'DOGECOIN THE GAME', 
+      media: <img src={dogecoin} alt="Dogecoin the Game logo" />, 
+      description: '', 
+      techStack: 'VanillaJS/HTML5/CSS3', 
+      link: 'http://dogecoin-the-game.surge.sh/'
+    },
+    {
+      name: 'SUPER SMASH BROS', 
+      media: superSmashBros, 
+      description: 'This is an Object-Oriented Python3 CLI game I created for one of my weekend homeworks in GA. Be sure to turn the volume up as you watch the video so you can hear the awesome music track I added to the game! It plays automatically when the user starts the game through the terminal. I accomplished all this after about 3 days of learning Python, and had SO much fun with it! Definitely one of my favorite homeworks from the entire bootcamp.',
+      techStack: 'Python (Object-Oriented)',
+      link: 'https://github.com/baileyjean/u4_hw_python_smash_bros'
+    },
+    {
+      name: 'RARE POKEDEX', 
+      media: rarePokedex, 
+      description: 'My partner Brady and I created this fullstack Flask app during an 18-hour Flaskathon in July 2021. I created the backend in just a few hours while Brady got our frontend built-out (that man is an absolute speed-demon when it comes to coding). Then we coordinated and rocked the frontend together! (Most of my frontend work can be seen on the browse results page and the user profile pages.) We had so much fun with this project and had a fun time presenting it at the end of our Flaskathon!',
+      techStack: 'Flask/Express/React/Node.js',
+      link: 'https://github.com/baileyjean/rare-pokedex'
+    },
+    {
+      name: 'MIDWAY MADNESS', 
+      media: midwayMadness, 
+      description: 'This is a Choose Your Own Adventure Python3 CLI game I created for one of my weekday homeworks in GA. The concept and code were all created and written in one night.', 
+      techStack: 'Python',
+      link: 'https://github.com/baileyjean/u4_hw_python_adventure'
+    }
+  ]
 
   return (
     <div ref={topRef} className="pages">
@@ -26,7 +76,19 @@ const Home = () => {
       </div>
       <div ref={projectRef} className="projects">
         <h2>Projects</h2>
-        <ProjectCard />
+        <div className="project-card">
+          {projects.map((project, index) => (
+            <ProjectCard 
+              {...props}
+              key={index}
+              name={project.name}
+              media={project.media}
+              description={project.description}
+              techStack={project.techStack}
+              link={project.link}
+            />
+          ))}
+        </div>
         <br />
         <button onClick={() => skillRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
       </div>

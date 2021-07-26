@@ -1,48 +1,15 @@
 import React from 'react';
-import dogecoin from '../styles/images/dogecoin.png'
-import retriever from '../styles/images/retriever.png'
-import nerdyNomad from '../styles/images/nerdyNomad.png'
 
-const Projects = () => {
+const Projects = (props) => {
   return (
-    <div className="project-card">
-      <div id="project-single">
-        <h2>NERDY NOMAD</h2>
-        <img src={nerdyNomad} alt="Nerdy Nomad logo" />
-        <p>Project Description</p>
-        <p>Project Stack</p>
+    <div id="project-single">
+      <h2>{props.name}</h2>
+      <div className="project-media">
+        {props.media}
       </div>
-      <div id="project-single">
-        <h2>RETRIEVER</h2>
-        <img src={retriever} alt="Retriever the App screenshot" />
-        <p>Project Description</p>
-        <p>Project Stack</p>
-      </div>
-      <div id="project-single">
-        <h2>RARE POKEDEX</h2>
-        <p>Image go here</p>
-        <p>Project Description</p>
-        <p>Project Stack</p>
-      </div>
-
-      <div id="project-single">
-        <h2>DOGECOIN THE GAME</h2>
-        <img src={dogecoin} alt="Dogecoin the Game logo" />
-        <p>Project Description</p>
-        <p>Project Stack</p>
-      </div>
-      <div id="project-single">
-        <h2>SUPER SMASH BROS</h2>
-        <p>Image go here</p>
-        <p>Project Description</p>
-        <p>Project Stack</p>
-      </div>
-      <div id="project-single">
-        <h2>MIDWAY MADNESS</h2>
-        <p>Image go here</p>
-        <p>Project Description</p>
-        <p>Project Stack</p>
-      </div>
+      <p>Project Description: {props.description}</p>
+      <p>Tech Used: {props.techStack}</p>
+      <a href={props.link} target="_blank" rel="noReferrer">{props.name}</a>
     </div>
   )
 }
