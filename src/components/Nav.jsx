@@ -24,8 +24,8 @@ const NavBar = () => {
         <button className="close-nav" onClick={closeNav}>X</button>
         {/* <img src={logo} alt={"Nerdy Nomad Logo"} style={{ width: '100%' }} /> */}
         <nav>
-          <span><NavLink style={{ textDecoration: 'none', color: 'white', textShadow: '2px 2px 4px #000000' }} to={"/"}>Bailey Codes</NavLink></span>
-          <span><NavLink style={{ textDecoration: 'none', color: 'white', textShadow: '2px 2px 4px #000000' }} to="/drop-me-a-line">Contact Me</NavLink></span>
+          <span><NavLink style={{ textDecoration: 'none', color: 'white', textShadow: '2px 2px 3px #000000' }} to={"/"}>Home</NavLink></span>
+          <span><NavLink style={{ textDecoration: 'none', color: 'white', textShadow: '2px 2px 3px #000000' }} to="/drop-me-a-line">Connect</NavLink></span>
         </nav>
       </div>
     </div>

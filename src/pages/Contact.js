@@ -3,8 +3,8 @@ import React from 'react'
 const Contact = () => {
 
   return (
-    <div className="contact">
-      <h1>Connect With Me</h1>
+    <div className="pages">
+      <h1>Let's Connect!</h1>
     </div>
   )
 }
