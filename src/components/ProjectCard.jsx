@@ -8,10 +8,11 @@ const Projects = (props) => {
         {props.media}
       </div>
       <p><b>Tech Used:</b><br />{props.techStack}</p>
-      <b>Link to {props.name}:</b><br />
+      <b>Link to {props.name}:</b>
       <a href={props.link} target="_blank" rel="noReferrer">{props.name}</a>
-      <b>Project Description:</b>
-      <p id="description">{props.description}</p>
+      <br />
+      {/* <b>Description:</b>
+      <p id="description">{props.description}</p> */}
     </div>
   )
 }

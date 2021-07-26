@@ -14,7 +14,7 @@ const Home = (props) => {
   const eduRef = useRef()
   const resumeRef = useRef()
   const superSmashBros = <iframe src="https://player.vimeo.com/video/579546505?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="266" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Smash Bros Python3 OOP CLI Game - With AWESOME Music!"></iframe>
-  const rarePokedex = <iframe src="https://player.vimeo.com/video/579560107?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="350" height="202" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Rare Pokedex: Flaskathon Fullstack Project"></iframe>
+  const rarePokedex = <iframe src="https://player.vimeo.com/video/579560107?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="173" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Rare Pokedex: Flaskathon Fullstack Project"></iframe>
   const midwayMadness = <iframe src="https://player.vimeo.com/video/579544307?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="266" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Midway Madness - A Fun, Creative Python3 CLI Game"></iframe>
   const projects = [
     {
@@ -72,19 +72,14 @@ const Home = (props) => {
       </span>
       <div ref={introRef} className="intro">
         <h2>Welcome</h2>
-        <p>Just my luck, no ice. You know what? It is beets. I've crashed into a beet truck. Do you have any idea how long it takes those cups to decompose. Checkmate... This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, without the oops!</p>
-        <p>Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists. Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! Must go faster. Hey, you know how I'm, like, always trying to save the planet? Here's my chance.</p>
-        <p>Checkmate... I was part of something special. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Must go faster... go, go, go, go, go! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
-        <p>God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Yes, Yes, without the oops! Yes, Yes, without the oops! Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
-        <p>Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? I was part of something special. You know what? It is beets. I've crashed into a beet truck. Remind me to thank John for a lovely weekend. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
+        <h3>Bailey Leavitt - Junior Software Engineer</h3>
+        <p>Welcome to my portfolio! You likely found me because I applied for a job with your company... if that's the case, congratulations! My minimalistic website is absolutely a callback to my MySpace profile from 2005, and every bit as edgy as I was then.</p>
+        <p>Sincerely though, my hope is that my website is intuitive to navigate, and creates enough intrigue to entice you to call me in for an interview. </p>
         <br />
-        <span>
-          <button onClick={() => projectRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
-        </span>
       </div>
-      <div ref={projectRef} className="projects">
-        <h2>Projects</h2>
-        <div className="project-card">
+      <div className="projects-container">
+        <h2>Let's Get Right to the Good Stuff!</h2>
+        <div ref={projectRef} className="project-card">
           {projects.map((project, index) => (
             <ProjectCard 
               {...props}
@@ -97,19 +92,38 @@ const Home = (props) => {
             />
           ))}
         </div>
-        <br />
-        <span>
-          <button onClick={() => skillRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
-          <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Jump to the Top</button>
-        </span>
       </div>
+      <br />
+      <span>
+        <button onClick={() => skillRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
+        <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Jump to the Top</button>
+      </span>
+      <h2>Skills</h2>
       <div ref={skillRef} className="skills">
-        <h2>Skills</h2>
-        <p>Just my luck, no ice. You know what? It is beets. I've crashed into a beet truck. Do you have any idea how long it takes those cups to decompose. Checkmate... This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, without the oops!</p>
-        <p>Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists. Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! Must go faster. Hey, you know how I'm, like, always trying to save the planet? Here's my chance.</p>
-        <p>Checkmate... I was part of something special. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Must go faster... go, go, go, go, go! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
-        <p>God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Yes, Yes, without the oops! Yes, Yes, without the oops! Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
-        <p>Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? I was part of something special. You know what? It is beets. I've crashed into a beet truck. Remind me to thank John for a lovely weekend. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>NodeJS</li>
+        <li>Express</li>
+        <li>React</li>
+        <li>ArduinoIDE</li>
+        <li>Flask</li>
+        <li>PostgreSQL</li>
+        <li>Sequelize</li>
+        <li>REST APIs</li>
+        <li>Git/GitHub</li>
+        <li>Microsoft Suite</li>
+        <li>Spreadsheet Software (Any - I LOVE Spreadsheets)</li>
+        <li>Data Analysis</li>
+        <li>User Acceptance Testing</li>
+        <li>Continuous Improvement</li>
+        <li>Public Speaking</li>
+        <li>Communication</li>
+        <li>Training</li>
+        <li>Team Management</li>
+        <li>Leadership</li>
+        <li>Experimental Design</li>
         <br />
         <span>
           <button onClick={() => eduRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
