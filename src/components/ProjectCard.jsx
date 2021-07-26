@@ -7,9 +7,11 @@ const Projects = (props) => {
       <div className="project-media">
         {props.media}
       </div>
-      <p>Project Description: {props.description}</p>
-      <p>Tech Used: {props.techStack}</p>
+      <p><b>Tech Used:</b><br />{props.techStack}</p>
+      <b>Link to {props.name}:</b><br />
       <a href={props.link} target="_blank" rel="noReferrer">{props.name}</a>
+      <b>Project Description:</b>
+      <p id="description">{props.description}</p>
     </div>
   )
 }

@@ -114,9 +114,6 @@ button:hover {
   margin: 0 4em 10em 0;
   padding: 0;
   width: 100%;
-  border-style: double;
-  border-width: 1px;
-  border-color: blue;
 }
 
 .pages h1 {
@@ -145,6 +142,18 @@ button:hover {
   width: 95%;
 }
 
+.pages a {
+  text-decoration: none;
+  color: rgb(53, 207, 33);
+}
+
+.pages a:hover {
+  color: gold;
+  font-weight: bold;
+  font-size: large;
+  text-shadow: 1px 1px 5px rgb(176, 243, 248);
+}
+
 .contact-page {
   height: 100vh;
 }
@@ -155,22 +164,23 @@ button:hover {
 .project-card {
   display: grid;
   grid-template-columns: 25em 25em 25em;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 0;
-  padding: 0.5em;
+  padding: 2em;
   width: 100%;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(0, 255, 128);
+  height: 200%;
 }
 
 #project-single {
-  border-style: dotted;
-  border-width: 1px; 
-  border-color: white;
-  margin: .25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 1em 0;
+  padding: 1em;
   width: 100%;
+  height: auto;
   border-radius: 69px;
+  box-shadow: .12em .12em 7px white, -.12em -.12em 7px white;
 }
 
 #project-single h2 {
@@ -180,9 +190,32 @@ button:hover {
   text-shadow: .01em .01em .1em #2affd1;
 }
 
-.project-media img {
+.project-media {
   width: 90%;
   height: auto;
   border-radius: 12px;
   box-shadow: .12em .12em 7px white, -.12em -.12em 7px white;
+  margin: .5em .5em .5em .5em;
+}
+
+.project-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: rgb(53, 207, 33);
+}
+
+.project-card a:hover {
+  color: gold;
+  font-weight: bold;
+  font-size: large;
+  text-shadow: 1px 1px 5px rgb(176, 243, 248);
+}
+
+#description {
+  text-align: left;
 }

@@ -4,6 +4,7 @@ import '../styles/App.css'
 import dogecoin from '../styles/images/dogecoin.png'
 import retriever from '../styles/images/retriever.png'
 import nerdyNomad from '../styles/images/nerdyNomad.png'
+import resume from '../styles/downloads/LeavittBailey-Resume-2021.pdf'
 
 const Home = (props) => {
   const topRef = useRef()
@@ -19,21 +20,21 @@ const Home = (props) => {
     {
       name: 'NERDY NOMAD', 
       media: <img src={nerdyNomad} alt="Nerdy Nomad logo" />, 
-      description: '', 
+      description: `Nerdy Nomad is a resource app helping Users connect with a science center in all 50 United States (and DC). Users can create profiles--secured by Authentication--then comment and rate science centers they have visited. Users get a Nerd Rating based on the number of science centers they've visited, and a Nomad Rating based on the number of states they've visited. If their Nerd and Nomad ratings are sufficiently high, Users can earn the Nerdy Nomad badge and display it on their profile!`, 
       techStack: 'PostgreSQL/Express/React/Node.js', 
       link: 'https://nerdy-nomad.herokuapp.com/'
     },
     {
       name: 'RETRIEVER', 
       media: <img src={retriever} alt="Retriever the App screenshot" />, 
-      description: '', 
+      description: `Retriever App is an app for posting and retrieving rescue animals, with a specific focus on exotic pets. While current apps on the market serve a similar purpose to Retriever, those apps are primarily marketed towards the most common pets: cats and dogs. Our app is going to fill a void in the market by serving underappreciated pets!`, 
       techStack: 'PostgreSQL/Express/React/Node.js', 
       link: 'https://retriever-app.herokuapp.com/'
     },
     {
       name: 'DOGECOIN THE GAME', 
       media: <img src={dogecoin} alt="Dogecoin the Game logo" />, 
-      description: '', 
+      description: `Dogecoin the Game is a web-based browser board game, created for my Unit 1 capstone project in General Assembly's Software Engineering Immersive bootcamp. The game has 20 spaces, a 4-sided dice, and an 84-card "Doge Deck" with six distinct card types. To win, you must reach your profit goal, have a non-zero bank account, and have at least one remaining life by the time you get back to square 1. On each turn, you pull one of the cards from the Doge Deck. Stats are updated after each dice roll. The game uses a fun combination of "doge-speak" and topical meme-references throughout the user's experience. Full descriptions of the six different cards can be found on the landing page for the game!`, 
       techStack: 'VanillaJS/HTML5/CSS3', 
       link: 'http://dogecoin-the-game.surge.sh/'
     },
@@ -63,6 +64,12 @@ const Home = (props) => {
   return (
     <div ref={topRef} className="pages">
       <h1>BaileyCodes</h1>
+      <span>
+        <button style={{fontSize: '12px'}} onClick={() => projectRef.current.scrollIntoView({behavior: 'smooth'})}>PROJECTS</button>
+        <button style={{fontSize: '12px'}} onClick={() => resumeRef.current.scrollIntoView({behavior: 'smooth'})}>RESUME</button>
+        <button style={{fontSize: '12px'}} onClick={() => skillRef.current.scrollIntoView({behavior: 'smooth'})}>SKILLS</button>
+        <button style={{fontSize: '12px'}} onClick={() => eduRef.current.scrollIntoView({behavior: 'smooth'})}>EDUCATION</button>
+      </span>
       <div ref={introRef} className="intro">
         <h2>Welcome</h2>
         <p>Just my luck, no ice. You know what? It is beets. I've crashed into a beet truck. Do you have any idea how long it takes those cups to decompose. Checkmate... This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, without the oops!</p>
@@ -71,8 +78,9 @@ const Home = (props) => {
         <p>God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Yes, Yes, without the oops! Yes, Yes, without the oops! Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
         <p>Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? I was part of something special. You know what? It is beets. I've crashed into a beet truck. Remind me to thank John for a lovely weekend. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
         <br />
-        <span>Check out my projects below!</span>
-        <button onClick={() => projectRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
+        <span>
+          <button onClick={() => projectRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
+        </span>
       </div>
       <div ref={projectRef} className="projects">
         <h2>Projects</h2>
@@ -90,7 +98,10 @@ const Home = (props) => {
           ))}
         </div>
         <br />
-        <button onClick={() => skillRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
+        <span>
+          <button onClick={() => skillRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
+          <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Jump to the Top</button>
+        </span>
       </div>
       <div ref={skillRef} className="skills">
         <h2>Skills</h2>
@@ -100,7 +111,10 @@ const Home = (props) => {
         <p>God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Yes, Yes, without the oops! Yes, Yes, without the oops! Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
         <p>Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? I was part of something special. You know what? It is beets. I've crashed into a beet truck. Remind me to thank John for a lovely weekend. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
         <br />
-        <button onClick={() => eduRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
+        <span>
+          <button onClick={() => eduRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
+          <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Jump to the Top</button>
+        </span>
       </div>
       <div ref={eduRef} className="education">
         <h2>Education</h2>
@@ -110,17 +124,16 @@ const Home = (props) => {
         <p>God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Yes, Yes, without the oops! Yes, Yes, without the oops! Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
         <p>Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? I was part of something special. You know what? It is beets. I've crashed into a beet truck. Remind me to thank John for a lovely weekend. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
         <br />
-        <button onClick={() => resumeRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
+        <span>
+          <button onClick={() => resumeRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
+          <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Jump to the Top</button>
+        </span>
       </div>
       <div ref={resumeRef} className="resume">
-        <h2>Resume & Downloads</h2>
-        <p>Just my luck, no ice. You know what? It is beets. I've crashed into a beet truck. Do you have any idea how long it takes those cups to decompose. Checkmate... This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, without the oops!</p>
-        <p>Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists. Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! Must go faster. Hey, you know how I'm, like, always trying to save the planet? Here's my chance.</p>
-        <p>Checkmate... I was part of something special. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Must go faster... go, go, go, go, go! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
-        <p>God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Yes, Yes, without the oops! Yes, Yes, without the oops! Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
-        <p>Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? I was part of something special. You know what? It is beets. I've crashed into a beet truck. Remind me to thank John for a lovely weekend. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
+        <h2>Resume</h2>
+        <iframe src={resume} width="100%" height="500px"></iframe>
         <br />
-        <button onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>&#8593;</button>
+        <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Back to the Beginning</button>
       </div>
     </div>
   )
