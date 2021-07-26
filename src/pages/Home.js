@@ -132,11 +132,17 @@ const Home = (props) => {
       </div>
       <div ref={eduRef} className="education">
         <h2>Education</h2>
-        <p>Just my luck, no ice. You know what? It is beets. I've crashed into a beet truck. Do you have any idea how long it takes those cups to decompose. Checkmate... This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, without the oops!</p>
-        <p>Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists. Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! Must go faster. Hey, you know how I'm, like, always trying to save the planet? Here's my chance.</p>
-        <p>Checkmate... I was part of something special. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Must go faster... go, go, go, go, go! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
-        <p>God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Yes, Yes, without the oops! Yes, Yes, without the oops! Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
-        <p>Must go faster. Eventually, you do plan to have dinosaurs on your dinosaur tour, right? I was part of something special. You know what? It is beets. I've crashed into a beet truck. Remind me to thank John for a lovely weekend. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
+        <h3>Software Engineering Certification</h3>
+        <p>July 2021</p>
+        <p>General Assembly - Software Engineering Immersive Remote</p>
+        <h3>Associate's of Applied Science in Biomedical Engineering</h3>
+        <p>Glendale Community College</p>
+        <p>May 2017</p>
+        <p>Graduated with Highest Distinction (4.0 GPA)</p>
+        <h3>Associate's of Science (Physics Emphasis)</h3>
+        <p>Glendale Community College</p>
+        <p>May 2017</p>
+        <p>Graduated with Highest Distinction (4.0 GPA)</p>
         <br />
         <span>
           <button onClick={() => resumeRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
