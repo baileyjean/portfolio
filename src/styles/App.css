@@ -211,7 +211,6 @@ button:hover {
   width: 90%;
   height: auto;
   border-radius: 12px;
-  box-shadow: .12em .12em 7px white, -.12em -.12em 7px white;
   margin: .5em .5em .5em .5em;
 }
 
@@ -247,6 +246,7 @@ button:hover {
 /* Modal Content */
 .modal-content {
   background-color: #fefefef5;
+  font-size: 1.15em;
   color: black;
   margin: auto;
   padding: 2.5em;
@@ -268,6 +268,16 @@ button:hover {
   text-shadow: .02em .02em .2em #2affd1;
   text-decoration: none;
   cursor: pointer;
+}
+
+.myBtn {
+  cursor: pointer;
+  background-color: white;
+  font-size: 1em;
+  margin: 1em;
+  color: black;
+  border-radius: 25px;
+  font-family: 'Encode Sans SC', sans-serif;
 }
 
 /**************************************************************************************************************************************************/

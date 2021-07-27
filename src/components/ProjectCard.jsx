@@ -5,12 +5,8 @@ const Projects = (props) => {
     <div id="project-single">
       <h2>{props.name}</h2>
       <div className="project-media">
-        {props.media}
+        <a href={props.link} target="_blank" rel="noReferrer">{props.media}</a>
       </div>
-      <p><b>Tech Used:</b><br />{props.techStack}</p>
-      <b>Link to {props.name}:</b>
-      <a href={props.link} target="_blank" rel="noReferrer">{props.name}</a>
-      <br />
       <button className="myBtn" onClick={() => { document.getElementById(props.index.toString()).style.display = "block"; }}>Description</button>
       <div className="modal" id={props.index.toString()}>
         <div className="modal-content">
@@ -18,6 +14,8 @@ const Projects = (props) => {
           <p id="description">{props.description}</p>
         </div>
       </div>
+      <p><b>Tech Used:</b><br />{props.techStack}</p>
+      <a href={props.link} target="_blank" rel="noReferrer">Link to {props.name}</a>
     </div>
   )
 }

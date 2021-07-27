@@ -20,14 +20,14 @@ const Home = (props) => {
     {
       name: 'NERDY NOMAD', 
       media: <img src={nerdyNomad} alt="Nerdy Nomad logo" />, 
-      description: `Nerdy Nomad is a resource app helping Users connect with a science center in all 50 United States (and DC). Users can create profiles--secured by Authentication--then comment and rate science centers they have visited. Users get a Nerd Rating based on the number of science centers they've visited, and a Nomad Rating based on the number of states they've visited. If their Nerd and Nomad ratings are sufficiently high, Users can earn the Nerdy Nomad badge and display it on their profile!`, 
+      description: `Nerdy Nomad is a resource web-app helping Users connect with a science center in all 50 United States (and DC). Users can create profiles--secured by Authentication--then comment and rate science centers they have visited. Users get a Nerd Rating based on the number of science centers they've visited, and a Nomad Rating based on the number of states they've visited. If their Nerd and Nomad ratings are sufficiently high, Users can earn the Nerdy Nomad badge and display it on their profile!`, 
       techStack: 'PostgreSQL/Express/React/Node.js', 
       link: 'https://nerdy-nomad.herokuapp.com/'
     },
     {
       name: 'RETRIEVER', 
       media: <img src={retriever} alt="Retriever the App screenshot" />, 
-      description: `Retriever App is an app for posting and retrieving rescue animals, with a specific focus on exotic pets. While current apps on the market serve a similar purpose to Retriever, those apps are primarily marketed towards the most common pets: cats and dogs. Our app is going to fill a void in the market by serving underappreciated pets!`, 
+      description: `Retriever is a web-app for posting and retrieving rescue animals, with a specific focus on exotic pets. While current apps on the market serve a similar purpose to Retriever, those apps are primarily marketed towards the most common pets: cats and dogs. Our app is going to fill a void in the market by serving underappreciated pets!`, 
       techStack: 'PostgreSQL/Express/React/Node.js', 
       link: 'https://retriever-app.herokuapp.com/'
     },
