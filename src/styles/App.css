@@ -37,6 +37,7 @@ button:hover {
   color: white;
   background-color: rgba(0, 0, 0, 0.233);
   font-weight: bolder;
+  box-shadow: .12em .12em 7px #2affd1;
 }
 
 /**************************************************************************************************************************************************/
@@ -149,6 +150,7 @@ button:hover {
 
 .contact-page {
   height: 100vh;
+  padding-bottom: 3em;
 }
 
 .contact-page a {
@@ -256,6 +258,8 @@ button:hover {
 
 .skills li {
   list-style-type: none;
+  text-align: left;
+  margin-left: 4em;
 }
 
 /**************************************************************************************************************************************************/
