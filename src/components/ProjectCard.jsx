@@ -11,8 +11,13 @@ const Projects = (props) => {
       <b>Link to {props.name}:</b>
       <a href={props.link} target="_blank" rel="noReferrer">{props.name}</a>
       <br />
-      {/* <b>Description:</b>
-      <p id="description">{props.description}</p> */}
+      <button className="myBtn" onClick={() => { document.getElementById(props.index.toString()).style.display = "block"; }}>Description</button>
+      <div className="modal" id={props.index.toString()}>
+        <div className="modal-content">
+          <span className="close" onClick={() => { document.getElementById(props.index.toString()).style.display = "none"; }}> &times;</span>
+          <p id="description">{props.description}</p>
+        </div>
+      </div>
     </div>
   )
 }

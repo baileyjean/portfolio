@@ -13,9 +13,9 @@ const Home = (props) => {
   const skillRef = useRef()
   const eduRef = useRef()
   const resumeRef = useRef()
-  const superSmashBros = <iframe src="https://player.vimeo.com/video/579546505?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="266" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Smash Bros Python3 OOP CLI Game - With AWESOME Music!"></iframe>
-  const rarePokedex = <iframe src="https://player.vimeo.com/video/579560107?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="173" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Rare Pokedex: Flaskathon Fullstack Project"></iframe>
-  const midwayMadness = <iframe src="https://player.vimeo.com/video/579544307?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="266" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Midway Madness - A Fun, Creative Python3 CLI Game"></iframe>
+  const superSmashBros = <iframe src="https://player.vimeo.com/video/579546505?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="266" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="Smash Bros Python3 OOP CLI Game - With AWESOME Music!"></iframe>
+  const rarePokedex = <iframe src="https://player.vimeo.com/video/579560107?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="173" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="Rare Pokedex: Flaskathon Fullstack Project"></iframe>
+  const midwayMadness = <iframe src="https://player.vimeo.com/video/579544307?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="300" height="266" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="Midway Madness - A Fun, Creative Python3 CLI Game"></iframe>
   const projects = [
     {
       name: 'NERDY NOMAD', 
@@ -84,6 +84,7 @@ const Home = (props) => {
             <ProjectCard 
               {...props}
               key={index}
+              index={index}
               name={project.name}
               media={project.media}
               description={project.description}
