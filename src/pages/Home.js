@@ -151,7 +151,7 @@ const Home = (props) => {
       </div>
       <div ref={resumeRef} className="resume">
         <h2>Resume</h2>
-        <iframe src={resume} width="100%" height="500px"></iframe>
+        <iframe src={resume} width="100%" height="500px" title="Bailey's Resume"></iframe>
         <br />
         <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Back to the Beginning</button>
       </div>
