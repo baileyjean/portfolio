@@ -149,7 +149,8 @@ button:hover {
 }
 
 .contact-page {
-  height: 100vh;
+  width: 90%;
+  height: auto;
   padding-bottom: 3em;
 }
 
