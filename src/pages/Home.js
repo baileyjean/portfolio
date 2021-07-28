@@ -126,11 +126,11 @@ const Home = (props) => {
         <li>Leadership</li>
         <li>Experimental Design</li>
         <br />
-        <span>
-          <button onClick={() => eduRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
-          <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Jump to the Top</button>
-        </span>
       </div>
+      <span>
+        <button onClick={() => eduRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
+        <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Jump to the Top</button>
+      </span>
       <div ref={eduRef} className="education">
         <h2>Education</h2>
         <h3>Software Engineering Certification</h3>

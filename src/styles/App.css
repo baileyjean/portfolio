@@ -314,9 +314,26 @@ button:hover {
   html, body {
     margin: 0px;
     padding: 0px;
-    width: 100%;
+    width: auto;
     height: auto;
     font-family: 'Assistant', sans-serif;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: white;
+    margin: .25em;
+    color: black;
+    border-radius: 25px;
+    font-family: 'Encode Sans SC', sans-serif;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.233);
+    font-weight: bolder;
+    box-shadow: .12em .12em 7px #2affd1;
   }
 }
 
@@ -339,7 +356,27 @@ button:hover {
     align-items: center;
     margin: 0 1em 1em 0;
     padding: 0;
-    width: 90%;
+    width: 75vw;
+  }
+
+  .intro {
+    width: 70%;
+  }
+
+  .pages h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 32px;
+    text-shadow: .01em .01em .1em #2affd1;
+    padding: 0;
+    margin: .25em 0 .25em 0;
+  }
+  
+  .pages h1:hover {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 28px;
+    text-shadow: 0em 1em .069em #2affd1;
+    margin: .5em 0 .75em 0;
+    cursor: none;
   }
 }
 
@@ -352,6 +389,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    align-items: center;
   }
   
   .project-card {
@@ -369,6 +407,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    align-self: center;
     margin: 0 0 1em 0;
     padding: 1em;
     width: 70%;
@@ -384,3 +424,27 @@ button:hover {
     margin: .5em .5em .5em .5em;
   }
 }
+
+/**************************************************************************************************************************************************/
+/******************************************************************** MOBILE: Skills **************************************************************/
+/**************************************************************************************************************************************************/
+@media screen and (max-width: 500px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .skills li {
+    list-style-type: none;
+    text-align: left;
+    margin-left: 4em;
+  }
+
+  .skills button {
+    align-self: center;
+  }
+}
+
+
