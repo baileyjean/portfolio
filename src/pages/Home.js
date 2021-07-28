@@ -134,16 +134,17 @@ const Home = (props) => {
       <div ref={eduRef} className="education">
         <h2>Education</h2>
         <h3>Software Engineering Certification</h3>
+        <p>General Assembly - Software Engineering Immersive Bootcamp</p>
+        <p>Software Engineering Certification</p>
         <p>July 2021</p>
-        <p>General Assembly - Software Engineering Immersive Remote</p>
         <h3>Associate's of Applied Science in Biomedical Engineering</h3>
         <p>Glendale Community College</p>
-        <p>May 2017</p>
         <p>Graduated with Highest Distinction (4.0 GPA)</p>
+        <p>May 2017</p>
         <h3>Associate's of Science (Physics Emphasis)</h3>
         <p>Glendale Community College</p>
-        <p>May 2017</p>
         <p>Graduated with Highest Distinction (4.0 GPA)</p>
+        <p>May 2017</p>
         <br />
         <span>
           <button onClick={() => resumeRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
