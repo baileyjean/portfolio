@@ -138,12 +138,10 @@ const Home = (props) => {
         <p>Completed over 420 hours of programming in an 11-week period, covering over 10 different languages and frameworks.</p>
         <p>July 2021</p>
         <h3>Associate's of Applied Science in Biomedical Engineering</h3>
-        <p>Glendale Community College</p>
-        <p>Graduated with Highest Distinction (4.0 GPA)</p>
-        <p>May 2017</p>
+        <h4>&</h4>
         <h3>Associate's of Science (Physics Emphasis)</h3>
         <p>Glendale Community College</p>
-        <p>Graduated with Highest Distinction (4.0 GPA)</p>
+        <p>Graduated with Highest Distinction (4.0 GPA). Treasurer and Member of the Phi Theta Kappa Honor Society. Treasurer of the Biotech Club. Member of the STEM Club. Student-volunteer of multiple STEM Outreach events. Recipient of multiple scholarships and awards. Student researcher.</p>
         <p>May 2017</p>
         <br />
         <span>
