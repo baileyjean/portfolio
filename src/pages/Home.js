@@ -135,7 +135,7 @@ const Home = (props) => {
         <h2>Education</h2>
         <h3>Software Engineering Certification</h3>
         <p>General Assembly - Software Engineering Immersive Bootcamp</p>
-        <p>Software Engineering Certification</p>
+        <p>Completed over 420 hours of programming in an 11-week period, covering over 10 different languages and frameworks.</p>
         <p>July 2021</p>
         <h3>Associate's of Applied Science in Biomedical Engineering</h3>
         <p>Glendale Community College</p>
