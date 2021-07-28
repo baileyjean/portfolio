@@ -99,8 +99,8 @@ const Home = (props) => {
         <button onClick={() => skillRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
         <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Jump to the Top</button>
       </span>
-      <h2>Skills</h2>
-      <div ref={skillRef} className="skills">
+      <h2 ref={skillRef}>Skills</h2>
+      <div className="skills">
         <li>HTML5</li>
         <li>CSS3</li>
         <li>JavaScript</li>
