@@ -391,6 +391,10 @@ button:hover {
     align-content: center;
     align-items: center;
   }
+
+  .projects-container h2 {
+    font-size: 18px;
+  }
   
   .project-card {
     display: flex;
@@ -461,4 +465,22 @@ button:hover {
   }
 }
 
+/**************************************************************************************************************************************************/
+/******************************************************************** MOBILE: Connect *************************************************************/
+/**************************************************************************************************************************************************/
+@media screen and (max-width: 500px) {
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em 1em 0;
+    padding: 0;
+    width: 75vw;
+    height: 100vh;
+  }
 
+  .contact-page img {
+    width: 110%;
+    border-radius: 50px;
+  }
+}
