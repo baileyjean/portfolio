@@ -1,6 +1,6 @@
 import React from 'react';
 import link from '../styles/images/link.png';
-import github from '../styles/images/github.png';
+import githublogo from '../styles/images/github.png';
 
 const Projects = (props) => {
   return (
@@ -19,7 +19,7 @@ const Projects = (props) => {
       <p><b>Tech Used:</b><br />{props.techStack}</p>
       <span>
         <a href={props.link} target="_blank" rel="noReferrer"><img src={link} alt="" style={{ width: '10%', margin: '1em', background: "white", cursor: "pointer" }} /></a>
-        <a href={props.gitHub} target="_blank" rel="noReferrer"><img src={github} alt="" style={{ width: '10%', margin: '1em', cursor: "pointer" }} /></a>
+        <a href={props.gitHub} target="_blank" rel="noReferrer"><img src={githublogo} alt="" style={{ width: '10%', margin: '1em', cursor: "pointer" }} /></a>
       </span>
     </div>
   )
