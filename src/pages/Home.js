@@ -4,7 +4,7 @@ import '../styles/App.css'
 import dogecoin from '../styles/images/dogecoin.png'
 import retriever from '../styles/images/retriever.png'
 import nerdyNomad from '../styles/images/nerdyNomad.png'
-import resume from '../styles/downloads/LeavittBailey-Resume-2021.pdf'
+import resume from '../styles/downloads/LeavittBailey-Resume-2022.pdf'
 import skillz from '../styles/images/skillz.png'
 
 const Home = (props) => {
@@ -103,7 +103,6 @@ const Home = (props) => {
       </div>
       <br />
       <span>
-        <button onClick={() => skillRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
         <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Jump to the Top</button>
       </span>
       <h2 ref={skillRef}>Skills</h2>
@@ -120,7 +119,6 @@ const Home = (props) => {
         <li>Experimental Design</li>
         <br />
         <span>
-          <button onClick={() => resumeRef.current.scrollIntoView({behavior: 'smooth'})}>&#8595;</button>
           <button style={{fontSize: '12px'}} onClick={() => topRef.current.scrollIntoView({behavior: 'smooth'})}>Jump to the Top</button>
         </span>
       </div>
