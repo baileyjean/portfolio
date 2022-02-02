@@ -3,7 +3,7 @@
 
 ## Created By: Bailey Leavitt
 
-[Deployed (http://www.baileycodes.com)]() | [Bailey's GitHub](https://www.github.com/baileyjean) | [Bailey's LinkedIn](https://www.linkedin.com/in/baileyleavitt)
+[Deployed](http://www.baileycodes.com) | [Bailey's GitHub](https://www.github.com/baileyjean) | [Bailey's LinkedIn](https://www.linkedin.com/in/baileyleavitt)
 
 ***
 
